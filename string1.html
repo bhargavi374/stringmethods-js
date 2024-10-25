@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const b = "   bhargavi   ";
+        console.log(a.trim())//bhargavi
+        console.log(a.trimStart())//bhargavi----
+        console.log(a.trimLeft())//bhargavi----
+        console.log(a.trimEnd())//----bhargavi
+        console.log(a.trimRight())//----bhargavi
+
+        const a = "shruthi";
+        console.log(a.charAt(-2));//
+        console.log(a.charAt(9));//
+        console.log(a.charAt(2));//r
+        console.log(a.charAt[7]);//undefined
+        console.log(a.indexOf("a"));//-1
+        console.log(a.indexOf("u"));//3
+        console.log(a.at(-4));//u
+        console.log(a.lastIndexOf("h"));//5
+        console.log(a.toLowerCase());//shruthi
+        console.log(a.toUpperCase());//SHRUTHI
+        console.log(a.startsWith("bha"));//false
+        console.log(a.startsWith("shr"));//true
+        console.log(a.endsWith("thi"));//true
+        console.log(a.endsWith("avi"));//false
+        console.log(a.length);//7
+
+
+        const p = "    bhanu     ";
+        const s = p.trimEnd();
+        console.log(p);//---bhanu---
+        console.log(s);//---bhanu
+        console.log(p.trim());//bhanu
+
+
+        const t = p.trim();
+        console.log(t);//bhanu
+
+
+        const q = "    bhanu     ";
+        const r = q.trimStart();
+        console.log(q);//---bhanu----
+        console.log(r);//bhanu----
+
+    </script>
+</body>
+
+</html>

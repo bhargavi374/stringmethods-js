@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //concat
+        var a = "Bhargavi"
+        var b = "Nareddy"
+        console.log(a + b);//BhargaviNareddy
+        console.log(a+" "+b);//Bhargavi Nareddy
+
+        let c = "bhargavi"
+        c = "shruthi"
+        let d = "reddy"
+        console.log(c.concat(" ", d));//shruthi reddy
+        console.log(d.concat(c));//reddyshruthi
+
+
+        //includes
+        var s = "NareddyBhargavi"
+        console.log(s.includes("Bh"));//true
+        console.log(s.includes("bi"));//false
+
+
+        //slice
+        let r = "bhargavi374"
+        console.log(r.slice(5,));//avi374
+        // console.log(r.slice(,5));//syntax error:unexpected token ,startindex is mandatory
+        const t="shruthi"
+        console.log(t.replace(t.slice(4,7),"abc"));//shruabc we can use slice mthd in replace mthd
+        console.log(t.slice(-5,-1));//ruth
+        console.log(t.slice(3,-5));//
+        console.log(t.slice(3,-1));//uth
+        console.log(t.slice(-5,7));//ruthi
+
+        //split
+        const y = "string methods of javascript";
+        z = y.split(" ");
+        z[0]="these are string";
+        console.log(z);
+
+        var w = "string*methods$of*java*script"
+        x = w.split("$");
+        a = x.join(" ");
+        b = a.split("*");
+        c = b.join(" ");
+        console.log(x,a,b,c);//['string*methods', 'of*java*script'] 'string*methods of*java*script' (4) ['string', 'methods of', 'java', 'script']0: "string"1: "methods of"2: "java"3: "script"length: 4[[Prototype]]: Array(0) 'string methods of java script'
+
+    </script>
+</body>
+</html>
